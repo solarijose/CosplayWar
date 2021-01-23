@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <title>Cosplay War!</title>
+        <meta charset="UTF-8">
+        <meta name="Descripcion" content="Pagina de venta Cosplays y Accesorios">
+        <meta name="Keywords" content="Cosplay,Accesorios,Venta,Replicas,Anime,Games,Juegos">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link href="css/styles.css" rel="stylesheet">
+        <script src="js/jquery.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </head>
+
+
+<body>
+<!-- Note -->
+<div>
+  <center><img class="img" src="assets/Fondo.jpg" alt="Fondo anime"></center>
+</div>
+
+<!-- Header -->
+<div class="header">
+    <h1>¡Bienvenidos a Cosplay War!</h1>
+    <b>Venta Cosplays - Difraces</b>
+    <p><center>¿No Tenes el que buscas? Encárganos el que deseas a tu gusto</center></p>
+  </div>
+
+  <nav class="navbar navbar-light bg-info rounded navbar-expand sticky menu sticky-top">
+    <!-- Navbar content -->
+    <form class="form-inline"></form>
+    <a href="index.html">Home</a>
+    <a href="Productos.html">Productos</a>
+    <a href="Pedidos.html">Pedidos</a>
+    <a href="Galeria_Clientes.html">Galeria Clientes</a>
+    <a href="Contacto.html">Contacto</a>
+  </nav>
+
+    <main class="main">
+        <h3>Pedidos 📧  </h3>
+        <h3>Datos personales y medidas</h3>
+        <div>
+            <label for="fullName">Nombre del Cosplay(requerido)</label>
+            <input placeholder="Escribir datos del disfraz" id="fullName" name="fullname" type="text" required>
+        </div>
+        <div>
+            <label for="fullName">Edad(Del Cosplayer (quien lo usuaria cosplay/disfraz o vestido)</label>
+            <input id="age" type="number" name="edad" max="99">
+        </div>
+        <div>
+            <label for="email">Email(requerido)</label>
+            <input name="email" id="email" type="email" placeholder="ejemplo@gmail.com" required>
+        </div>
+        <div>
+            <label for="number">Telefono de contacto o Whatsapp(requerido)</label>
+            <input id="Telefono" type="number" name="edad" max="15" placeholder="" required>
+        </div>
+        <h3>Comentarios Adicionales que quieras agregar? 🎲  </h2>
+        <div>
+            <textarea placeholder="Comentarios opcionales" name="comments" id="comments" cols="30" rows="10"></textarea>
+        </div>
+        <button type="submit">Enviar</button>
+    </form>
+        <hr>
+        <h3>Form de Suscripción</h3>
+        <form action="http://prueba-local.test/"metod="POST">
+        <div>
+            <input name="email" id="sub" type="email" placeholder="ejemplo@ejemplo.com">
+            <button type="submit">Suscribirse</button>
+        </div>
+        </form>
+    </main>
+
+    <br></br>
+    <!-- Footer -->
+    <div class="footer">
+      <h2><footer>Copyright Solari José Luis &copy; 2021</footer></h2>
+    </div>
+
+</body>
+</html>

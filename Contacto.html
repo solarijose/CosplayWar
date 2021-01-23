@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <title>Cosplay War!</title>
+        <meta charset="UTF-8">
+        <meta name="Descripcion" content="Pagina de venta Cosplays y Accesorios">
+        <meta name="Keywords" content="Cosplay,Accesorios,Venta,Replicas,Anime,Games,Juegos">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link href="css/styles.css" rel="stylesheet">
+        <script src="js/jquery.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </head>
+
+<body>
+<!-- Note -->
+<div>
+  <center><img class="img" src="assets/Fondo.jpg" alt="Fondo anime"></center>
+</div>
+
+<!-- Header -->
+<div class="header">
+    <h1>¡Bienvenidos a Cosplay War!</h1>
+    <b>Venta Cosplays - Difraces</b>
+    <p><center>¿No Tenes el que buscas? Encárganos el que deseas a tu gusto</center></p>
+  </div>
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-light bg-info rounded navbar-expand sticky menu sticky-top">
+    <!-- Navbar content -->
+    <form class="form-inline"></form>
+    <a href="index.html">Home</a>
+    <a href="Productos.html">Productos</a>
+    <a href="Pedidos.html">Pedidos</a>
+    <a href="Galeria_Clientes.html">Galeria Clientes</a>
+    <a href="Contacto.html">Contacto</a>
+  </nav>
+
+    <main>
+        <h3>Contacto 📧</h3>
+
+
+            <h3>Deja tus datos personales</h3>
+            <div>
+                <label for="fullName">Edad</label>
+                <input id="age" type="number" name="edad" max="99">
+            </div>
+            <div>
+                <label for="fullName">Nombre y Apellido</label>
+                <input placeholder="Escribir tus datos" id="fullName" name="fullname" type="text" required>
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input name="email" id="email" type="email" placeholder="ejemplo@gmail.com" required>
+            </div>
+            <h3>Contanos mas sobre tu problema</h3>
+            <div>
+                <label for="interest">¿En que podemos ayudarte?</label>
+                <select name="interest" id="interest">
+                    <option value="Email Marketing">Email Marketing</option>
+                    <option value="Venta Online">Venta Online</option>
+                    <option value="Asesoramientro">Asesoramientro</option>
+                    <option value="Otro">Otro</option>
+                </select>
+            </div>
+            <div>
+                <label for="comments">¿Qué necesitas?</label>
+                <textarea placeholder="Comentarios" name="comments" id="comments" cols="30" rows="10"></textarea>
+            </div>
+            <div>
+            
+                <label>
+                    <input name="spam_me" value="true" type="checkbox"> Desea recibir el Newsletter?
+                </label>
+            </div>
+            <button type="submit">
+                Enviar
+            </button>
+        </form>
+        <hr>
+        <h3>Form de Suscripción</h3>
+        <form action="http://prueba-local.test/"metod="POST">
+            <div>
+                <input name="email" id="sub" type="email" placeholder="ejemplo@ejemplo.com">
+                <button type="submit">Suscribirse</button>
+            </div>
+        </form>
+    </main>
+
+    <br></br>
+<!-- Footer -->
+    <div class="footer">
+        <h2><footer>Copyright Solari José Luis &copy; 2021</footer></h2>
+    </div>
+
+</body>
+</html>
