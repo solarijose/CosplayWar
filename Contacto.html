@@ -36,54 +36,60 @@
     <a href="Galeria_Clientes.html">Galeria Clientes</a>
     <a href="Contacto.html">Contacto</a>
   </nav>
-
     <main>
-        <h3>Contacto 📧</h3>
-            <h3>Deja tus datos personales</h3>
-            <div>
-                <label for="fullName">Edad</label>
-                <input id="age" type="number" name="edad" max="99">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="well well-sm">
+                        <form class="form-horizontal" method="post">
+                            <fieldset>
+                                <legend class="text-center header-contacto">Contactanos</legend>
+        
+                                <div class="form-group">
+                                    <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                                    <div class="col-md-8">
+                                        <input id="fname" name="name" type="text" placeholder="Nombre" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                                    <div class="col-md-8">
+                                        <input id="lname" name="name" type="text" placeholder="Apellido" class="form-control">
+                                    </div>
+                                </div>
+        
+                                <div class="form-group">
+                                    <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-envelope-o bigicon"></i></span>
+                                    <div class="col-md-8">
+                                        <input id="email" name="email" type="text" placeholder="Direccion EMail" class="form-control">
+                                    </div>
+                                </div>
+        
+                                <div class="form-group">
+                                    <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-phone-square bigicon"></i></span>
+                                    <div class="col-md-8">
+                                        <input id="phone" name="phone" type="text" placeholder="Telefono" class="form-control">
+                                    </div>
+                                </div>
+        
+                                <div class="form-group">
+                                    <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon"></i></span>
+                                    <div class="col-md-8">
+                                        <textarea class="form-control" id="message" name="message" placeholder="Ingrese su mensaje aqui.Nos comunicaremos en un plazo de 2 días habiles" rows="7"></textarea>
+                                    </div>
+                                </div>
+        
+                                <div class="form-group">
+                                    <div class="col-md-12 text-center">
+                                        <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
             </div>
-            <div>
-                <label for="fullName">Nombre y Apellido</label>
-                <input placeholder="Escribir tus datos" id="fullName" name="fullname" type="text" required>
-            </div>
-            <div>
-                <label for="email">Email</label>
-                <input name="email" id="email" type="email" placeholder="ejemplo@gmail.com" required>
-            </div>
-            <h3>Contanos mas sobre tu problema</h3>
-            <div>
-                <label for="interest">¿En que podemos ayudarte?</label>
-                <select name="interest" id="interest">
-                    <option value="Email Marketing">Email Marketing</option>
-                    <option value="Venta Online">Venta Online</option>
-                    <option value="Asesoramientro">Asesoramientro</option>
-                    <option value="Otro">Otro</option>
-                </select>
-            </div>
-            <div>
-                <label for="comments">¿Qué necesitas?</label>
-                <textarea placeholder="Comentarios" name="comments" id="comments" cols="30" rows="10"></textarea>
-            </div>
-            <div>
-            
-                <label>
-                    <input name="spam_me" value="true" type="checkbox"> Desea recibir el Newsletter?
-                </label>
-            </div>
-            <button type="submit">
-                Enviar
-            </button>
-        </form>
-        <hr>
-        <h3>Form de Suscripción</h3>
-        <form action="http://prueba-local.test/"metod="POST">
-            <div>
-                <input name="email" id="sub" type="email" placeholder="ejemplo@ejemplo.com">
-                <button type="submit">Suscribirse</button>
-            </div>
-        </form>
+        </div>
     </main>
 
     <br></br>
