@@ -4,5 +4,5 @@ Proyecto Final
 Coderhouse
 Desarrollo Web
 
-Sitio dedicado a la venta
+Sitio dedicado a la Venta y Alquiler
 Cosplays, disfraces, accesorios,muñecos, llaveros.

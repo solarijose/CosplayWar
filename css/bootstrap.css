@@ -314,9 +314,9 @@ legend {
   max-width: 100%;
   padding: 0;
   margin-bottom: .5rem;
-  font-size: 1.5rem;
+  font-size: 2.0rem;
   line-height: inherit;
-  color: inherit;
+  color: aqua;
   white-space: normal;
 }
 
