@@ -82,6 +82,23 @@ img {
   font-size: 20px;
 }
 
+/* Móviles en horizontal o tablets en vertical */
+
+@media (max-width: 767px) { 
+    #galeria {
+        columns:2;
+    }
+
+}
+        
+/* Móviles en vertical */
+
+@media (max-width: 480px) {
+    #galeria {
+        columns: 1;
+    }
+}
+
 h1 {
   color: blue;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
