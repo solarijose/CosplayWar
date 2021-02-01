@@ -105,6 +105,11 @@ h4 {
   text-align: center;
 }
 
+h5 {
+  text-align: center;
+  color: #E80000;
+}
+
 b {
   color: #E80000;
   font-weight: bold;
