@@ -316,7 +316,7 @@ legend {
   margin-bottom: .5rem;
   font-size: 2.0rem;
   line-height: inherit;
-  color: #4DC3FF;
+  color: #E80000;
   white-space: normal;
 }
 
@@ -450,6 +450,7 @@ mark,
 .img-fluid {
   max-width: 100%;
   height: auto;
+  color:#E80000;
 }
 
 .img-thumbnail {
@@ -2339,15 +2340,15 @@ fieldset:disabled a.btn {
 }
 
 .btn-primary {
-  color: #fff;
-  background-color: #007bff;
-  border-color: #007bff;
+  color: #E80000;
+  background-color: #161A1D;
+  border-color: #E80000;
 }
 
 .btn-primary:hover {
-  color: #fff;
-  background-color: #0069d9;
-  border-color: #0062cc;
+  color: #E80000;
+  background-color: #161A1D;
+  border-color: #E80000;
 }
 
 .btn-primary:focus, .btn-primary.focus {
@@ -6104,7 +6105,7 @@ button.bg-success:focus {
 }
 
 .bg-info {
-  background-color: #4dc3ff !important;
+  background-color: #161A1D !important;
 }
 
 a.bg-info:hover, a.bg-info:focus,
