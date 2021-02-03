@@ -56,8 +56,8 @@
 
 .imgfondo {
   background-position: left;
-  width: 50%;
-  height: 140px;
+  width: 100%;
+  max-width: 700px;
   color: #000000;
 }
 
@@ -100,6 +100,7 @@ h2 footer {
 
 h3 {
   color: #E80000;
+  text-align: center;
 }
 
 h4 {
