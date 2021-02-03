@@ -91,6 +91,7 @@ h1 {
 
 h2 {
   color: #D3D3D3;
+  text-align: center;
 }
 
 h2 footer {
@@ -118,6 +119,7 @@ b {
 p {
   color: #E80000;
   font-weight: bold;
+  text-align: center;
 }
 
 th {

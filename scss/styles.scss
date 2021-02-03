@@ -94,6 +94,7 @@ h1 {
 }
 h2 {
 	color:$colorTexto;
+	text-align: center;
 	footer{
 		color: $colorComentarios;
 	}
@@ -116,6 +117,7 @@ b {
 p {
 	color:$colorComentarios;
 	font-weight: bold;
+	text-align: center;
 }
 th {
 	font-style: italic;
