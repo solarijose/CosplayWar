@@ -88,7 +88,7 @@ img {
 	font-size: 20px;
 }
 h1 {
-	color: blue;
+	color:$colorTexto;
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 	text-align: center;
 }
@@ -390,3 +390,22 @@ a {
 .active {
 	background-color: #F5F3F4;
 }
+
+.thumb {
+	max-width:150px;
+	max-height:150px;
+  }
+  
+  .foto {
+	width:33.33%;
+	border:0px dotted lightgrey;
+	padding:0px;
+	margin:0px;
+	
+  }
+  
+  .principal {
+	display: flex;
+	flex-wrap: wrap;
+  }
+  
