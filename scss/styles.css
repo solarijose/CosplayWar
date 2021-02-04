@@ -424,4 +424,8 @@ a {
             columns: 1;
   }
 }
+
+.active {
+  background-color: #F5F3F4;
+}
 /*# sourceMappingURL=styles.css.map */
