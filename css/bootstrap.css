@@ -313,12 +313,12 @@ legend {
   display: block;
   width: 100%;
   max-width: 100%;
-  padding: 0;
-  margin-bottom: .5rem;
+  padding: 10px;
   font-size: 2.0rem;
   line-height: inherit;
   color: #E80000;
   white-space: normal;
+  margin-left: 230px;
 }
 
 progress {
