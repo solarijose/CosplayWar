@@ -63,7 +63,7 @@
 
 img {
   vertical-align: baseline;
-  border-style: solid;
+  border-style: outset;
   color: #E80000;
 }
 
@@ -234,7 +234,6 @@ center {
 
 a {
   font-size: 20px;
-  color: #E80000;
   font-style: italic;
 }
 
