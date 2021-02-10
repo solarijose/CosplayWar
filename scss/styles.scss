@@ -375,15 +375,12 @@ a {
 }
 
 .footer-div {
-  padding: 20px;
-  font-size: 11px;
-  text-align: left;
+  margin: 1% 0 0 70%;
+  display: inline-block;
+  height: 30px;
+  width: 18%;
   background: $colorFondo;
   background-color: $colorTexto;
-  float: none !important;
-  text-align: center;
-  position: fixed;
-  bottom: 0;
 }
 .div {
   padding: 5px;
