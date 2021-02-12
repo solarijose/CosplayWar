@@ -68,7 +68,7 @@ $marcoImagenes: #e80000;
 
 img {
   vertical-align: baseline;
-  border-style: outset;
+  border-style: hidden;
   color: $marcoImagenes;
 }
 
@@ -148,11 +148,11 @@ html {
   font-family: sans-serif;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: $colorFondo;
 }
 body {
-  font-family: serif;
-  margin: 5px;
+  font-family: sans-serif;
+  margin: 0px;
   background-color: $colorFondo;
   margin: 0;
   padding: 0;
@@ -232,10 +232,11 @@ a {
   font-style: italic;
 }
 .header {
-  padding: 20px;
+  padding: 20px 10px;
   text-align: center;
-  background: #000000;
-  color: blue;
+  background: $colorFondo;
+  color: $colorComentarios;
+  overflow: hidden;
 }
 .navbar {
   a {
@@ -405,7 +406,7 @@ a {
 }
 
 .active {
-  background-color: #f5f3f4;
+  background-color: $colorTexto;
 }
 
 .thumb {
@@ -415,7 +416,7 @@ a {
 
 .foto {
   width: 33.33%;
-  border: 0px dotted lightgrey;
+  border: 0px dotted $colorTexto;
   padding: 0px;
   margin: 0px;
 }
@@ -440,7 +441,7 @@ a {
   width: 80%;
   max-width: 700px;
   text-align: center;
-  color: #ccc;
+  color: $colorTexto;
   padding: 10px 0;
   height: 150px;
 }
@@ -477,7 +478,7 @@ a {
   position: absolute;
   top: 15px;
   right: 35px;
-  color: #f1f1f1;
+  color: $colorTexto;
   font-size: 40px;
   font-weight: bold;
   transition: 0.3s;
@@ -485,14 +486,97 @@ a {
 
 .close:hover,
 .close:focus {
-  color: #bbb;
+  color: $colorTexto;
   text-decoration: none;
   cursor: pointer;
 }
 
-/* 100% Image Width on Smaller Screens */
+/* Ancho de imagen del 100% en pantallas más pequeñas*/
 @media only screen and (max-width: 700px) {
   .modal-content {
     width: 100%;
   }
+}
+
+.mobile-container {
+  max-width: 480px;
+  margin: auto;
+  background-color: #555;
+  height: 500px;
+  color: white;
+  border-radius: 10px;
+}
+
+/* Style El menu de navegacion */
+.topnav {
+  overflow: hidden;
+  background-color: $colorFondo;
+  position: relative;
+}
+
+/* Ocultar los enlaces dentro del menú de navegación (excepto el logotipo / inicio) */
+.topnav #myLinks {
+  display: none;
+}
+
+/* Style enlaces del menú de navegación */
+.topnav a {
+  color: $colorTexto;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+/* Style menu de hamburguesa */
+.topnav a.icon {
+  background: $colorFondo;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Agrega un color de fondo gris al pasar el mouse */
+.topnav a:hover {
+  background-color: $colorTexto;
+  color: $colorFondo;
+}
+
+/* Aplicar estilo al enlace activo (o inicio / logotipo) */
+.active {
+  background-color: $colorTexto;
+  color: white;
+}
+
+.toggle-nav {
+  display: none !important;
+}
+
+@media screen and (max-width: 580px) {
+  .toggle-nav {
+    display: inline-block !important;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .toggle-nav {
+    display: inline-block !important;
+    float: right;
+    margin: 25px;
+    font-size: 2em;
+    transition: color linear 0.15s;
+  }
+
+  a.toggle-nav:link,
+  a.toggle-nav:visited,
+  a.toggle-nav:hover,
+  a.toggle-nav:active {
+    text-decoration: none;
+    color: #fff;
+  }
+}
+
+* {
+  box-sizing: border-box;
 }
