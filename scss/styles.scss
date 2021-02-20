@@ -104,7 +104,7 @@ h2 {
 }
 h3 {
   color: $colorComentarios;
-  text-align: center;
+  text-align: left;
 }
 h4 {
   text-align: center;
@@ -125,22 +125,22 @@ p {
   font-size: 20px;
 }
 th {
-  font-style: italic;
+  font-style: sans-serif;
   color: $colorComentarios;
 }
 td {
-  font-style: italic;
+  font-style: sans-serif;
   color: $colorComentarios;
 }
 div {
   b {
-    font-style: italic;
+    font-style: sans-serif;
     font-size: 20px;
     color: $colorComentarios;
   }
   p {
-    font-style: italic;
-    font-size: 20px;
+    font-style: sans-serif;
+    font-size: 18px;
     color: $colorComentarios;
   }
 }
@@ -222,14 +222,14 @@ article {
   display: flex;
 }
 center {
-  font-style: italic;
+  font-style: sans-serif;
   font-size: 28px;
   color: $colorComentarios;
 }
 a {
   font-size: 20px;
   color: $colorComentarios;
-  font-style: italic;
+  font-style: sans-serif;
 }
 .header {
   padding: 20px 10px;
@@ -426,6 +426,21 @@ a {
   flex-wrap: wrap;
 }
 
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: $colorFondo; /* Fallback color */
+  background-color: $colorFondo; /* Black w/ opacity */
+}
+
 /* Modal Content (image) */
 .modal-content {
   margin: auto;
@@ -441,14 +456,13 @@ a {
   width: 80%;
   max-width: 700px;
   text-align: center;
-  color: $colorTexto;
+  color: #ccc;
   padding: 10px 0;
   height: 150px;
 }
 
-/* Add Animation */
-.modal-content,
-#caption {
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {  
   -webkit-animation-name: zoom;
   -webkit-animation-duration: 0.6s;
   animation-name: zoom;
@@ -465,12 +479,8 @@ a {
 }
 
 @keyframes zoom {
-  from {
-    transform: scale(0);
-  }
-  to {
-    transform: scale(1);
-  }
+  from {transform:scale(0)}
+  to {transform:scale(1)}
 }
 
 /* The Close Button */
@@ -478,7 +488,7 @@ a {
   position: absolute;
   top: 15px;
   right: 35px;
-  color: $colorTexto;
+  color: #f1f1f1;
   font-size: 40px;
   font-weight: bold;
   transition: 0.3s;
@@ -486,10 +496,11 @@ a {
 
 .close:hover,
 .close:focus {
-  color: $colorTexto;
+  color: #bbb;
   text-decoration: none;
   cursor: pointer;
 }
+
 
 /* Ancho de imagen del 100% en pantallas más pequeñas*/
 @media only screen and (max-width: 700px) {
@@ -601,3 +612,11 @@ a {
 * {
   box-sizing: border-box;
 }
+
+#myImg{
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}

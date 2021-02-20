@@ -100,7 +100,7 @@ h2 footer {
 
 h3 {
   color: #e80000;
-  text-align: center;
+  text-align: left;
 }
 
 h4 {
@@ -125,24 +125,24 @@ p {
 }
 
 th {
-  font-style: italic;
+  font-style: sans-serif;
   color: #e80000;
 }
 
 td {
-  font-style: italic;
+  font-style: sans-serif;
   color: #e80000;
 }
 
 div b {
-  font-style: italic;
+  font-style: sans-serif;
   font-size: 20px;
   color: #e80000;
 }
 
 div p {
-  font-style: italic;
-  font-size: 20px;
+  font-style: sans-serif;
+  font-size: 18px;
   color: #e80000;
 }
 
@@ -236,7 +236,7 @@ article {
 }
 
 center {
-  font-style: italic;
+  font-style: sans-serif;
   font-size: 28px;
   color: #e80000;
 }
@@ -244,7 +244,7 @@ center {
 a {
   font-size: 20px;
   color: #e80000;
-  font-style: italic;
+  font-style: sans-serif;
 }
 
 .header {
@@ -463,6 +463,30 @@ a {
       flex-wrap: wrap;
 }
 
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: #000000;
+  /* Fallback color */
+  background-color: #000000;
+  /* Black w/ opacity */
+}
+
 /* Modal Content (image) */
 .modal-content {
   margin: auto;
@@ -478,14 +502,13 @@ a {
   width: 80%;
   max-width: 700px;
   text-align: center;
-  color: #d3d3d3;
+  color: #ccc;
   padding: 10px 0;
   height: 150px;
 }
 
-/* Add Animation */
-.modal-content,
-#caption {
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
   -webkit-animation-name: zoom;
   -webkit-animation-duration: 0.6s;
   animation-name: zoom;
@@ -517,7 +540,7 @@ a {
   position: absolute;
   top: 15px;
   right: 35px;
-  color: #d3d3d3;
+  color: #f1f1f1;
   font-size: 40px;
   font-weight: bold;
   -webkit-transition: 0.3s;
@@ -526,7 +549,7 @@ a {
 
 .close:hover,
 .close:focus {
-  color: #d3d3d3;
+  color: #bbb;
   text-decoration: none;
   cursor: pointer;
 }
@@ -644,5 +667,16 @@ a {
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#myImg:hover {
+  opacity: 0.7;
 }
 /*# sourceMappingURL=styles.css.map */
