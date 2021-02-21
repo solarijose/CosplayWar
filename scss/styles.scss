@@ -84,9 +84,9 @@ img {
 }
 .homeimg {
   background-color: $colorTexto;
-  width: 90%;
-  padding: 10px 4px 6px 0px;
-  font-size: 20px;
+  width: 100%;
+  padding: 15px ​10px 10px 0px;
+  font-size: 25px;
 }
 h1 {
   color: $colorTexto;
@@ -120,8 +120,8 @@ b {
 }
 p {
   color: $colorComentarios;
-  font-weight: bold;
-  text-align: center;
+  font-weight: sans-serif;
+  text-align: -webkit-center;
   font-size: 20px;
 }
 th {
@@ -462,7 +462,8 @@ a {
 }
 
 /* Add Animation - Zoom in the Modal */
-.modal-content, #caption {  
+.modal-content,
+#caption {
   -webkit-animation-name: zoom;
   -webkit-animation-duration: 0.6s;
   animation-name: zoom;
@@ -479,8 +480,12 @@ a {
 }
 
 @keyframes zoom {
-  from {transform:scale(0)}
-  to {transform:scale(1)}
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
 }
 
 /* The Close Button */
@@ -500,7 +505,6 @@ a {
   text-decoration: none;
   cursor: pointer;
 }
-
 
 /* Ancho de imagen del 100% en pantallas más pequeñas*/
 @media only screen and (max-width: 700px) {
@@ -613,14 +617,12 @@ a {
   box-sizing: border-box;
 }
 
-#myImg{
+#myImg {
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s;
 }
 
-#myImg:hover {opacity: 0.7;}
-
-
-//PRUEBA//
-
+#myImg:hover {
+  opacity: 0.7;
+}
