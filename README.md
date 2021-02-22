@@ -1,4 +1,4 @@
-# D2
+# Cosplay War
 
 Proyecto Final
 Coderhouse
