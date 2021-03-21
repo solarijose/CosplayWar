@@ -1,0 +1,6 @@
+.bg-dark, .list-group-item-dark{
+    background-color: #0f2026 !important;
+}
+.list-group-item-dark{
+     color: #e80000;
+ }
