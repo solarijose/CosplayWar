@@ -1,9 +1,9 @@
 /*# sourceMappingURL=styles.css.map */
 
 $colorTexto: #d3d3d3;
-$colorFondo: #000000;
 $colorComentarios: #e80000;
 $marcoImagenes: #e80000;
+
 
 .center {
   background-color: darkgray;
@@ -63,7 +63,7 @@ $marcoImagenes: #e80000;
   background-position: left;
   width: 100%;
   max-width: 700px;
-  color: $colorFondo;
+  color: $dark;
 }
 
 img {
@@ -148,12 +148,12 @@ html {
   font-family: sans-serif;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
-  -webkit-tap-highlight-color: $colorFondo;
+  -webkit-tap-highlight-color: $dark;
 }
 body {
   font-family: sans-serif;
   margin: 0px;
-  background-color: $colorFondo;
+  background-color: $dark;
   margin: 0;
   padding: 0;
 }
@@ -162,7 +162,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  background-color: $colorFondo;
+  background-color: $dark;
 }
 
 hr {
@@ -234,7 +234,7 @@ a {
 .header {
   padding: 20px 10px;
   text-align: center;
-  background: $colorFondo;
+  background: $dark;
   color: $colorComentarios;
   overflow: hidden;
 }
@@ -245,7 +245,7 @@ a {
     text-decoration: none;
     text-align: center;
     &:hover {
-      background-color: $colorFondo;
+      background-color: $dark
       color: $colorComentarios;
     }
   }
@@ -351,7 +351,7 @@ a {
   -webkit-box-flex: 65%;
   -ms-flex: 65%;
   flex: 65%;
-  background-color: $colorFondo;
+  background-color: $dark
   padding: 20px;
 }
 .main-div {
@@ -362,7 +362,7 @@ a {
   -webkit-box-flex: 30%;
   -ms-flex: 30%;
   flex: 30%;
-  background-color: $colorFondo;
+  background-color: $dark;
   padding: 20px;
 }
 .footer {
@@ -371,7 +371,7 @@ a {
   bottom: 0;
   width: 100%;
   text-align: center;
-  background: $colorFondo;
+  background: $dark;
   background-color: $colorTexto;
 }
 
@@ -380,7 +380,7 @@ a {
   display: inline-block;
   height: 30px;
   width: 18%;
-  background: $colorFondo;
+  background: $dark;
   background-color: $colorTexto;
 }
 .div {
@@ -437,8 +437,8 @@ a {
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
-  background-color: $colorFondo; /* Fallback color */
-  background-color: $colorFondo; /* Black w/ opacity */
+  background-color: $dark /* Fallback color */
+  background-color: $dark; /* Black w/ opacity */
 }
 
 /* Modal Content (image) */
@@ -525,7 +525,7 @@ a {
 /* Style El menu de navegacion */
 .topnav {
   overflow: hidden;
-  background-color: $colorFondo;
+  background-color: $dark
   position: relative;
 }
 
