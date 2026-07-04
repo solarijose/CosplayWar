@@ -2,129 +2,118 @@
 <html lang="es">
 
 <head>
-  <title>Cosplay War! - Tu lugar para el cosplay</title>
-  <meta charset="UTF-8">
-  <meta name="description" content="Pagina de venta Cosplay y Accesorios">
-  <meta name="Keywords" content="Accesorios,Cosplay,Venta,Réplicas,Anime,Disfraces,Juegos">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" href="assets/iconos/Logo.ico">
-  <link rel="stylesheet" href="scss/bootstrap.css">
-  <link href="scss/styles.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/main.css">
-  <script src="js/jquery.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
+    <meta charset="UTF-8">
+    <title>Pedidos | Cosplay War! - Tu lugar para el cosplay</title>
+    <meta name="description" content="Página de venta Cosplay y Accesorios">
+    <meta name="keywords" content="Accesorios, Cosplay, Venta, Réplicas, Anime, Disfraces, Juegos">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="shortcut icon" href="assets/iconos/Logo.ico">
+    
+    <link rel="stylesheet" href="scss/bootstrap.css">
+    <link rel="stylesheet" href="scss/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
-<body>
-  <!-- Navigation Bar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand logo-link">
-      <img src="assets/Cosplay.jpg" class="img-fluid w-75" />
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toogler-icon"></span>
-      <i class="fa fa-bars"></i>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a href="index.html" class="nav-link">Home</a>
-        </li>
-        <li class="nav-item">
-          <a href="productos.html" class="nav-link">Productos</a>
-        </li>
-        <li class="nav-item">
-          <a href="pedidos.html" class="nav-link">Pedidos</a>
-        </li>
-        <li class="nav-item">
-          <a href="galeria-clientes.html" class="nav-link">Galería Clientes</a>
-        </li>
-        <li class="nav-item">
-          <a href="contacto.html" class="nav-link">Contacto</a>
-        </li>
-      </ul>
+<body class="d-flex flex-column min-vh-100">
+    
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a href="index.html" class="navbar-brand logo-link">
+                <img src="assets/Cosplay.jpg" class="img-fluid w-75" alt="Logo Cosplay War" />
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                <i class="fa fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="productos.html" class="nav-link">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="pedidos.html" class="nav-link active">Pedidos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="galeria-clientes.html" class="nav-link">Galería Clientes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contacto.html" class="nav-link">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
-    </div>
-  </nav>
+    <main class="container my-5">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <div class="card shadow-sm p-4 border-0 bg-light">
+                    <h1 class="text-center mb-4">Pedidos 📧</h1>
+                    
+                    <form method="post" action="#">
+                        <fieldset>
+                            
+                            <div class="form-group mb-3">
+                                <label for="fname" class="font-weight-bold h5"><i class="fa fa-user text-info"></i> Datos Personales</label>
+                                <input id="fname" name="fname" type="text" placeholder="Nombre Completo" class="form-control" required>
+                            </div>
 
-  </div>
-  </div>
+                            <div class="form-group mb-3">
+                                <label for="cosplayName" class="font-weight-bold h5"><i class="fa fa-star text-info"></i> Nombre del Cosplay (Requerido)</label>
+                                <input id="cosplayName" name="cosplayName" type="text" placeholder="Escribir datos del Cosplay (Ej: Armadura de Iron Man, Peluca de Goku...)" class="form-control" required>
+                            </div>
 
-  <main class="main">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="well well-sm">
-            <form class="form-horizontal" method="post">
-              <fieldset>
-                <h1 class="text-center">Pedidos 📧</h1>
-                <h3>Datos Personales</h3>
-                <div class="form-group">
-                  <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
-                  <div class="col-md-8">
-                    <input id="fname" name="name" type="text" placeholder="Nombre Completo" class="form-control">
-                  </div>
-                </div>
-                <h3>Nombre del Cosplay (requerido)</h3>
-                <div class="form-group">
-                  <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
-                  <div class="col-md-8">
-                    <input id="lname" name="name" type="text" placeholder="Escribir datos del Cosplay"
-                      class="form-control">
-                  </div>
-                </div>
-                <h3>Correo de Contacto</h3>
-                <div class="form-group">
-                  <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-envelope-o bigicon"></i></span>
-                  <div class="col-md-8">
-                    <input id="email" name="email" type="text" placeholder="Direccion EMail" class="form-control">
-                  </div>
-                </div>
-                <h3>Numero de Contacto</h3>
-                <div class="form-group">
-                  <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-phone-square bigicon"></i></span>
-                  <div class="col-md-8">
-                    <input id="phone" name="phone" type="text" placeholder="Telefono o Whatsapp" class="form-control">
-                  </div>
-                </div>
-                <h3>Datos o comentarios Adicionales del Pedido</h3>
-                <div class="form-group">
-                  <span class="col-md-1 col-md-offset-2 text-center"><i
-                      class="fa fa-pencil-square-o bigicon"></i></span>
-                  <div class="col-md-8">
-                    <textarea class="form-control" id="message" name="message"
-                      placeholder="Ingrese su mensaje aqui. Nos comunicaremos en un plazo de 2 días hábiles"
-                      rows="7"></textarea>
-                  </div>
-                </div>
+                            <div class="row">
+                                <div class="col-md-6 form-group mb-3">
+                                    <label for="email" class="font-weight-bold h5"><i class="fa fa-envelope-o text-info"></i> Correo de Contacto</label>
+                                    <input id="email" name="email" type="email" placeholder="Dirección Email" class="form-control" required>
+                                </div>
 
-                <div class="form-group">
-                  <div class="col-md-12 text-center">
-                    <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
-                  </div>
+                                <div class="col-md-6 form-group mb-3">
+                                    <label for="phone" class="font-weight-bold h5"><i class="fa fa-phone-square text-info"></i> Número de Contacto</label>
+                                    <input id="phone" name="phone" type="tel" placeholder="Teléfono o WhatsApp" class="form-control" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group mb-4">
+                                <label for="message" class="font-weight-bold h5"><i class="fa fa-pencil-square-o text-info"></i> Datos o comentarios Adicionales</label>
+                                <textarea class="form-control" id="message" name="message"
+                                    placeholder="Medidas, referencias visuales, fecha límite, etc. Nos comunicaremos en un plazo de 2 días hábiles."
+                                    rows="6"></textarea>
+                            </div>
+
+                            <div class="form-group text-center mt-4">
+                                <button type="submit" class="btn btn-primary btn-lg w-50">Enviar Pedido</button>
+                            </div>
+
+                        </fieldset>
+                    </form>
                 </div>
-              </fieldset>
-            </form>
-          </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </main>
-  </div>
-  </div>
-  <!-- Footer -->
-  <div class="footer bg-dark p-3">
-    <p>Copyright Solari José Luis &copy; 2021</p>
-    <img src="">
-    <a href="https://www.facebook.com/WolfSarlor/" target="_blank"><img src="assets/iconos/facebook.png"
-        alt="icono para redes sociales facebook"></a>
-    <a href="https://www.instagram.com/wolfsarlor/" target="_blank"><img src="assets/iconos/instagram.png"
-        alt="icono para redes sociales Instagram"></a>
-  </div>
+    </main>
 
+    <footer class="footer bg-dark p-4 text-center text-white mt-auto">
+        <p class="mb-2">Copyright Solari José Luis &copy; 2021</p>
+        <div>
+            <a href="https://www.facebook.com/WolfSarlor/" target="_blank" rel="noopener noreferrer" class="mx-2">
+                <img src="assets/iconos/facebook.png" alt="Perfil de Facebook de Cosplay War">
+            </a>
+            <a href="https://www.instagram.com/wolfsarlor/" target="_blank" rel="noopener noreferrer" class="mx-2">
+                <img src="assets/iconos/instagram.png" alt="Perfil de Instagram de Cosplay War">
+            </a>
+        </div>
+    </footer>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </body>
 
 </html>
