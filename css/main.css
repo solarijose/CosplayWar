@@ -1,9 +1,18 @@
-.bg-dark, .list-group-item-dark{
+/* --- OVERRIDES DE BOOTSTRAP --- */
+
+/* Reemplazar el fondo oscuro por defecto de Bootstrap por el color de la marca */
+.bg-dark, 
+.list-group-item-dark {
     background-color: #0f2026 !important;
 }
-.list-group-item-dark{
-     color: #e80000;
- }
-.logo-link:hover{
+
+/* Darle estilo a los links de interés del footer/home */
+.list-group-item-dark {
+    color: #e80000;
+    border-color: #0a1519; /* Opcional: oscurece el borde para que combine perfecto */
+}
+
+/* Efecto hover limpio para el logo en el menú de navegación */
+.logo-link:hover {
     background-color: #0f2026 !important;
 }
