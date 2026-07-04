@@ -1,13 +1,77 @@
 /*# sourceMappingURL=styles.css.map */
 
+// --- VARIABLES ---
 $colorTexto: #d3d3d3;
 $colorComentarios: #e80000;
 $marcoImagenes: #e80000;
+$dark: #343a40; // Variable declarada (Faltaba en tu código original)
 
+// --- ESTILOS BASE ---
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: $dark;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: $dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+// --- TIPOGRAFÍA ---
+h1, h2 {
+  color: $colorTexto;
+  text-align: center;
+}
+
+h3 {
+  color: $colorComentarios;
+  text-align: left;
+}
+
+h4, h5 {
+  text-align: center;
+  color: $colorComentarios;
+}
+
+p {
+  color: $colorComentarios;
+  font-weight: normal;
+  text-align: center; // Corregido -webkit-center a center standard
+  font-size: 20px;
+}
+
+b {
+  color: $colorComentarios;
+  font-weight: bold;
+}
+
+a {
+  font-size: 20px;
+  color: $colorComentarios;
+  text-decoration: none;
+}
+
+// --- IMÁGENES Y GALERÍA ---
+img {
+  vertical-align: baseline;
+  border-style: hidden;
+  color: $marcoImagenes;
+}
+
+.img-fluid, .img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 
 .center {
   background-color: darkgray;
 }
+
 .item {
   &:hover {
     .img-gal {
@@ -18,26 +82,19 @@ $marcoImagenes: #e80000;
     }
   }
 }
+
 .img-gal {
   height: 15rem;
   opacity: 1;
   display: block;
   width: 100%;
-  -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
+  backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  height: 15rem;
-  opacity: 1;
-  display: block;
-  width: 100%;
-  transition: 0.5s ease;
-  backface-visibility: hidden;
 }
+
 .img-gal-text {
-  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
   text-align: center;
   transition: 0.5s ease;
   opacity: 0;
@@ -49,27 +106,11 @@ $marcoImagenes: #e80000;
 .img {
   height: 200px;
   background: #9e9797;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
+  display: flex; // Agregado para que flex-direction funcione
   flex-direction: column;
   width: 100%;
   margin: auto;
-  vertical-align: baseline;
   border-style: groove;
-}
-
-.imgfondo {
-  background-position: left;
-  width: 100%;
-  max-width: 700px;
-  color: $dark;
-}
-
-img {
-  vertical-align: baseline;
-  border-style: hidden;
-  color: $marcoImagenes;
 }
 
 .galeria {
@@ -78,570 +119,9 @@ img {
     top: 0;
     left: 0;
     opacity: 0;
-    -webkit-transition: opacity 3s;
     transition: opacity 3s;
   }
 }
-.homeimg {
-  background-color: $colorTexto;
-  width: 100%;
-  padding: 15px ​10px 10px 0px;
-  font-size: 25px;
-}
-h1 {
-  color: $colorTexto;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  text-align: center;
-}
-h2 {
-  color: $colorTexto;
-  text-align: center;
-  footer {
-    color: $colorComentarios;
-  }
-}
-h3 {
-  color: $colorComentarios;
-  text-align: left;
-}
-h4 {
-  text-align: center;
-}
-h5 {
-  text-align: center;
-  color: $colorComentarios;
-}
 
-b {
-  color: $colorComentarios;
-  font-weight: bold;
-}
-p {
-  color: $colorComentarios;
-  font-weight: sans-serif;
-  text-align: -webkit-center;
-  font-size: 20px;
-}
-th {
-  font-style: sans-serif;
-  color: $colorComentarios;
-}
-td {
-  font-style: sans-serif;
-  color: $colorComentarios;
-}
-div {
-  b {
-    font-style: sans-serif;
-    font-size: 20px;
-    color: $colorComentarios;
-  }
-  p {
-    font-style: sans-serif;
-    font-size: 18px;
-    color: $colorComentarios;
-  }
-}
-html {
-  font-family: sans-serif;
-  line-height: 1.15;
-  -webkit-text-size-adjust: 100%;
-  -webkit-tap-highlight-color: $dark;
-}
-body {
-  font-family: sans-serif;
-  margin: 0px;
-  background-color: $dark;
-  margin: 0;
-  padding: 0;
-}
-
-html,
-body {
-  margin: 0;
-  padding: 0;
-  background-color: $dark;
-}
-
-hr {
-  -webkit-box-sizing: content-box;
-  box-sizing: content-box;
-  height: 0;
-  overflow: visible;
-}
-aside {
-  display: block;
-  position: -webkit-sticky;
-  position: sticky;
-}
-figcaption {
-  display: block;
-  position: -webkit-sticky;
-  position: sticky;
-}
-figure {
-  display: block;
-  position: -webkit-sticky;
-  position: sticky;
-}
-footer {
-  display: block;
-  position: -webkit-sticky;
-  position: sticky;
-}
-header {
-  display: block;
-  position: -webkit-sticky;
-  position: sticky;
-}
-hgroup {
-  display: block;
-  position: -webkit-sticky;
-  position: sticky;
-}
-main {
-  display: block;
-  position: -webkit-sticky;
-  position: sticky;
-}
-nav {
-  display: block;
-  position: -webkit-sticky;
-  position: sticky;
-}
-section {
-  display: block;
-  position: -webkit-sticky;
-  position: sticky;
-}
-article {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-center {
-  font-style: sans-serif;
-  font-size: 28px;
-  color: $colorComentarios;
-}
-a {
-  font-size: 20px;
-  color: $colorComentarios;
-  font-style: sans-serif;
-}
-.header {
-  padding: 20px 10px;
-  text-align: center;
-  background: $dark;
-  color: $colorComentarios;
-  overflow: hidden;
-}
-.navbar {
-  a {
-    color: $colorComentarios;
-    padding: 14px 20px;
-    text-decoration: none;
-    text-align: center;
-    &:hover {
-      background-color: $dark
-      color: $colorComentarios;
-    }
-  }
-  .container {
-    display: -ms-flexbox;
-    display: -webkit-box;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -ms-flex-align: center;
-    -webkit-box-align: center;
-    align-items: center;
-    -ms-flex-pack: justify;
-    -webkit-box-pack: justify;
-    justify-content: space-between;
-  }
-  .container-fluid {
-    display: -ms-flexbox;
-    display: -webkit-box;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -ms-flex-align: center;
-    -webkit-box-align: center;
-    align-items: center;
-    -ms-flex-pack: justify;
-    -webkit-box-pack: justify;
-    justify-content: space-between;
-  }
-  .container-sm {
-    display: -ms-flexbox;
-    display: -webkit-box;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -ms-flex-align: center;
-    -webkit-box-align: center;
-    align-items: center;
-    -ms-flex-pack: justify;
-    -webkit-box-pack: justify;
-    justify-content: space-between;
-  }
-  .container-md {
-    display: -ms-flexbox;
-    display: -webkit-box;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -ms-flex-align: center;
-    -webkit-box-align: center;
-    align-items: center;
-    -ms-flex-pack: justify;
-    -webkit-box-pack: justify;
-    justify-content: space-between;
-  }
-  .container-lg {
-    display: -ms-flexbox;
-    display: -webkit-box;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -ms-flex-align: center;
-    -webkit-box-align: center;
-    align-items: center;
-    -ms-flex-pack: justify;
-    -webkit-box-pack: justify;
-    justify-content: space-between;
-  }
-  .container-xl {
-    display: -ms-flexbox;
-    display: -webkit-box;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -ms-flex-align: center;
-    -webkit-box-align: center;
-    align-items: center;
-    -ms-flex-pack: justify;
-    -webkit-box-pack: justify;
-    justify-content: space-between;
-  }
-}
-.row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-}
-.side {
-  -webkit-box-flex: 30%;
-  -ms-flex: 30%;
-  flex: 30%;
-  background-color: $colorTexto;
-  padding: 20px;
-}
-.flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-.main {
-  -webkit-box-flex: 65%;
-  -ms-flex: 65%;
-  flex: 65%;
-  background-color: $dark
-  padding: 20px;
-}
-.main-div {
-  color: $colorTexto;
-}
-
-.side-div {
-  -webkit-box-flex: 30%;
-  -ms-flex: 30%;
-  flex: 30%;
-  background-color: $dark;
-  padding: 20px;
-}
-.footer {
-  position: static;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-  background: $dark;
-  background-color: $colorTexto;
-}
-
-.footer-div {
-  margin: 1% 0 0 70%;
-  display: inline-block;
-  height: 30px;
-  width: 18%;
-  background: $dark;
-  background-color: $colorTexto;
-}
-.div {
-  padding: 5px;
-}
-.texto {
-  background-color: $colorTexto;
-  color: $colorComentarios;
-  font-size: 16px;
-  padding: 16px 32px;
-}
-/* Móviles en horizontal o tablets en vertical */
-@media (max-width: 767px) {
-  #galeria {
-    columns: 2;
-  }
-}
-/* Móviles en vertical */
-@media (max-width: 480px) {
-  #galeria {
-    columns: 1;
-  }
-}
-
-.active {
-  background-color: $colorTexto;
-}
-
-.thumb {
-  max-width: 150px;
-  max-height: 150px;
-}
-
-.foto {
-  width: 33.33%;
-  border: 0px dotted $colorTexto;
-  padding: 0px;
-  margin: 0px;
-}
-
-.principal {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: $dark /* Fallback color */
-  background-color: $dark; /* Black w/ opacity */
-}
-
-/* Modal Content (image) */
-.modal-content {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-}
-
-/* Caption of Modal Image */
-#caption {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-  text-align: center;
-  color: #ccc;
-  padding: 10px 0;
-  height: 150px;
-}
-
-/* Add Animation - Zoom in the Modal */
-.modal-content,
-#caption {
-  -webkit-animation-name: zoom;
-  -webkit-animation-duration: 0.6s;
-  animation-name: zoom;
-  animation-duration: 0.6s;
-}
-
-@-webkit-keyframes zoom {
-  from {
-    -webkit-transform: scale(0);
-  }
-  to {
-    -webkit-transform: scale(1);
-  }
-}
-
-@keyframes zoom {
-  from {
-    transform: scale(0);
-  }
-  to {
-    transform: scale(1);
-  }
-}
-
-/* The Close Button */
-.close {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #f1f1f1;
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.close:hover,
-.close:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-/* Ancho de imagen del 100% en pantallas más pequeñas*/
-@media only screen and (max-width: 700px) {
-  .modal-content {
-    width: 100%;
-  }
-}
-
-.mobile-container {
-  max-width: 480px;
-  margin: auto;
-  background-color: #555;
-  height: 500px;
-  color: white;
-  border-radius: 10px;
-}
-
-/* Style El menu de navegacion */
-.topnav {
-  overflow: hidden;
-  background-color: $dark
-  position: relative;
-}
-
-/* Ocultar los enlaces dentro del menú de navegación (excepto el logotipo / inicio) */
-.topnav #myLinks {
-  display: none;
-}
-
-.topnav {
-  overflow: hidden;
-  background-color: #333;
-}
-
-.topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.topnav a.active {
-  background-color: $marcoImagenes;
-  color: white;
-}
-
-.topnav .icon {
-  display: none;
-}
-
-/* Aplicar estilo al enlace activo (o inicio / logotipo) */
-.active {
-  background-color: $colorTexto;
-  color: white;
-}
-
-.toggle-nav {
-  display: none !important;
-}
-
-@media screen and (max-width: 580px) {
-  .toggle-nav {
-    display: inline-block !important;
-  }
-}
-
-@media screen and (max-width: 580px) {
-  .toggle-nav {
-    display: inline-block !important;
-    float: right;
-    margin: 25px;
-    font-size: 2em;
-    transition: color linear 0.15s;
-  }
-
-  @media screen and (max-width: 600px) {
-    .topnav.responsive {
-      position: relative;
-    }
-    .topnav.responsive .icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .topnav.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
-    }
-  }
-
-  a.toggle-nav:link,
-  a.toggle-nav:visited,
-  a.toggle-nav:hover,
-  a.toggle-nav:active {
-    text-decoration: none;
-    color: #fff;
-  }
-}
-
-* {
-  box-sizing: border-box;
-}
-
-#myImg {
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-#myImg:hover {
-  opacity: 0.7;
-}
-
-.responsive {
-  background: url("https://s20.postimg.org/o09gf7fvx/bag.jpg") no-repeat center
-    top;
-  border: 1px solid red;
-  background-size: contain;
-  width: 100%;
-  height: 270px;
-}
-
-.img-fluid {
-  max-width: 100%;
-  height: auto;
-}
-.img-responsive {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
+// --- ESTRUCTURA Y COMPONENTES ---
+.main
