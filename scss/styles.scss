@@ -4,7 +4,8 @@
 $colorTexto: #d3d3d3;
 $colorComentarios: #e80000;
 $marcoImagenes: #e80000;
-$dark: #343a40; // Variable declarada (Faltaba en tu código original)
+$dark: #343a40; 
+$brandDark: #0f2026; // Tu color personalizado
 
 // --- ESTILOS BASE ---
 html, body {
@@ -40,7 +41,7 @@ h4, h5 {
 p {
   color: $colorComentarios;
   font-weight: normal;
-  text-align: center; // Corregido -webkit-center a center standard
+  text-align: center; 
   font-size: 20px;
 }
 
@@ -106,22 +107,7 @@ img {
 .img {
   height: 200px;
   background: #9e9797;
-  display: flex; // Agregado para que flex-direction funcione
+  display: flex; 
   flex-direction: column;
   width: 100%;
-  margin: auto;
-  border-style: groove;
-}
-
-.galeria {
-  img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    transition: opacity 3s;
-  }
-}
-
-// --- ESTRUCTURA Y COMPONENTES ---
-.main
+  margin:
